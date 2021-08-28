@@ -14,7 +14,7 @@ button.addEventListener('click', () => {
     // console.log(cityInput);
 
     //Now Fetch Through Get API 
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityInput}&units=metric&appid=${key}`)
+    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityInput}&units=metric&appid=${API_KEY}`)
         .then(res => res.json())
         .then(data => {
             // console.log(data);
